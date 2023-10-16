@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CALCULADORA</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="calculadora">
+            <input placeholder="00.00" id="pantalla"></input>
+            <div class="botones">
+                <button class="tecla" onclick="addNumber('1')">1</button>
+                <button class="tecla" onclick="addNumber('2')">2</button>
+                <button class="tecla" onclick="addNumber('3')">3</button>
+                <button class="tecla" onclick="addNumber('4')">4</button>
+                <button class="tecla" onclick="addNumber('5')">5</button>
+                <button class="tecla" onclick="addNumber('6')">6</button>
+                <button class="tecla" onclick="addNumber('7')">7</button>
+                <button class="tecla" onclick="addNumber('8')">8</button>
+                <button class="tecla" onclick="addNumber('9')">9</button>
+                <button class="tecla" onclick="addNumber('0')">0</button>
+                <button class="tecla" onclick="addOperator('+')">+</button>
+                <button class="tecla" onclick="addOperator('-')">-</button>
+                <button class="tecla" onclick="addOperator('*')">*</button>
+                <button class="tecla" onclick="addOperator('/')">/</button>
+                <button class="tecla" onclick="calculate()">=</button>
+                <button class="tecla" onclick="deleteAll()">C</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="logic.js"></script>
+
+</body>
+</html>

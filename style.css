@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+}
+@font-face {
+    font-family: calculadora;
+    src: url(./leter/Calculator.ttf);
+}
+
+.contenedor{
+    margin-top: 200px;
+    transition: 5s;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+h1{
+    color: rgba(190, 119, 248, 0.658);;
+}
+.contenedor:hover{
+width:250px;
+background: white;
+box-shadow: 0 0 10px  white, 0 0 40px  white, 0 0 80px  white;
+}
+.calculadora{
+
+border: 2px solid rgb(255, 255, 255);
+width: 250px;
+border-style: outset;
+box-shadow: inset 0 0 5px rgb(247, 0, 255);
+
+}
+#pantalla{
+height: 50px;
+width: 244px;
+border-style: ridge;
+border-color: rgba(190, 119, 248, 0.658);
+background: rgba(190, 119, 248, 0.658);
+margin: 2px;
+text-align: center;
+justify-content: center;
+align-items: center;
+display: flex;
+font-family: calculadora;
+color: greenyellow;
+font-size: 50px;     
+}
+.botones{
+    width: 100%;
+    margin: auto;
+    background: rebeccapurple;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+.tecla{
+    height: 30PX;
+    width: 100%;
+    background: black;
+    color: greenyellow;
+    border-color:rebeccapurple;
+    transition: 2s; 
+    margin: auto;
+}
+.tecla:hover{
+    background: #a945c7;
+    border-color: greenyellow;
+    color: aliceblue;
+    box-shadow: 0 0 10px#a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7,;
+}
